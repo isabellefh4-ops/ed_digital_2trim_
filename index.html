@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Encanto</title>
+
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #fff8f4;
+        color: #4a3028;
+    }
+
+    header {
+        background: #6d3f35;
+        color: white;
+        padding: 25px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 27px;
+        font-weight: bold;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+
+    nav a:hover {
+        color: #ffd5c8;
+    }
+
+    .inicio {
+        min-height: 430px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 10%;
+        background: #f7d8cd;
+    }
+
+    .texto {
+        max-width: 520px;
+    }
+
+    .texto h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .texto p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .botao {
+        display: inline-block;
+        background: #6d3f35;
+        color: white;
+        padding: 13px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+    }
+
+    .bolo {
+        width: 250px;
+        height: 220px;
+        background: #fff;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 90px;
+        box-shadow: 10px 10px 0 #e8b9aa;
+    }
+
+    section {
+        padding: 60px 9%;
+    }
+
+    .titulo {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .titulo h2 {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .linha {
+        width: 60px;
+        height: 4px;
+        background: #d98272;
+        margin: auto;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .card {
+        background: white;
+        padding: 28px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 5px 18px #00000012;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-7px);
+    }
+
+    .icone {
+        font-size: 55px;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        line-height: 1.5;
+        color: #725b53;
+    }
+
+    .receita {
+        background: #f3e1d9;
+    }
+
+    .receita-box {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+    .receita-box h3 {
+        margin-bottom: 15px;
+    }
+
+    .receita-box ul {
+        padding-left: 20px;
+        line-height: 2;
+    }
+
+    .curiosidade {
+        background: #6d3f35;
+        color: white;
+        text-align: center;
+    }
+
+    .curiosidade p {
+        max-width: 700px;
+        margin: 15px auto;
+        line-height: 1.7;
+    }
+
+    footer {
+        background: #3d2722;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    @media (max-width: 750px) {
+        header {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav a {
+            margin: 0 7px;
+        }
+
+        .inicio {
+            flex-direction: column;
+            text-align: center;
+            gap: 40px;
+        }
+
+        .texto h1 {
+            font-size: 38px;
+        }
+
+        .cards {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🍰 Doce Encanto</div>
+
+```
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#doces">Doces</a>
+    <a href="#receita">Receita</a>
+    <a href="#curiosidades">Curiosidades</a>
+</nav>
+```
+
+</header>
+
+<main>
+
+```
+<section class="inicio" id="inicio">
+    <div class="texto">
+        <h1>Um mundo feito de doces</h1>
+
+        <p>
+            Bem-vindo ao Doce Encanto, um espaço dedicado
+            aos sabores, receitas e momentos especiais da
+            confeitaria.
+        </p>
+
+        <a class="botao" href="#doces">Conheça os doces</a>
+    </div>
+
+    <div class="bolo">🧁</div>
+</section>
+
+<section id="doces">
+    <div class="titulo">
+        <h2>Nossos favoritos</h2>
+        <div class="linha"></div>
+    </div>
+
+    <div class="cards">
+
+        <article class="card">
+            <div class="icone">🍰</div>
+            <h3>Bolos</h3>
+            <p>
+                Desde receitas simples até bolos
+                decorados para momentos especiais.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="icone">🧁</div>
+            <h3>Cupcakes</h3>
+            <p>
+                Pequenos, bonitos e perfeitos para
+                festas e comemorações.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="icone">🍪</div>
+            <h3>Cookies</h3>
+            <p>
+                Crocantes por fora, macios por dentro
+                e cheios de sabor.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+<section class="receita" id="receita">
+    <div class="titulo">
+        <h2>Receita simples</h2>
+        <div class="linha"></div>
+    </div>
+
+    <div class="receita-box">
+        <h3>🍫 Brigadeiro tradicional</h3>
+
+        <ul>
+            <li>1 lata de leite condensado</li>
+            <li>1 colher de manteiga</li>
+            <li>3 colheres de chocolate em pó</li>
+            <li>Chocolate granulado para finalizar</li>
+        </ul>
+
+        <br>
+
+        <p>
+            Misture os ingredientes em uma panela,
+            mexendo em fogo baixo até desgrudar do fundo.
+            Depois, espere esfriar e faça pequenas bolinhas.
+        </p>
+    </div>
+</section>
+
+<section class="curiosidade" id="curiosidades">
+    <h2>Você sabia?</h2>
+
+    <p>
+        A confeitaria reúne criatividade, técnica e
+        tradição. Muitas receitas que conhecemos hoje
+        foram modificadas ao longo dos anos e ganharam
+        diferentes versões em vários países.
+    </p>
+</section>
+```
+
+</main>
+
+<footer>
+    <p>Doce Encanto • Sabores que tornam momentos especiais</p>
+</footer>
+
+</body>
+</html>atgpt
